@@ -1,0 +1,4 @@
+mapastring.adb:6:43: warning: index for "Key" may assume lower bound of 1
+mapastring.adb:6:43: warning: suggested replacement: "Key'First"
+mapastring.adb:6:48: warning: index for "Key" may assume lower bound of 1
+mapastring.adb:6:48: warning: suggested replacement: "Key'First"

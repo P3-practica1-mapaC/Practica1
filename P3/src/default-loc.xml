@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>E:\P3\src\default.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\P3\src\mapaString.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 14" >
+      <vfs_project />
+      <vfs_file>E:\P3\src\mapaString.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>E:\P3\src\vector.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 1" >
+      <vfs_project>E:\P3\src\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaString.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\Red\AppData\Local\Temp\Rar$DRa12404.5205\Ada_Lab_02\src\strings.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\Red\AppData\Local\Temp\Rar$DRa12404.5605\Ada_Lab_02\src\strings.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 1" >
+      <vfs_project>E:\P3\src\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaString.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\P3\src\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\strings.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 14" >
+      <vfs_project>E:\P3\src\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaString.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>E:\P3\src\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\strings.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
