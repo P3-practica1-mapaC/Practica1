@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaCharacters.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaCharacters.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaCharacters.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 25" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaCharacters.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 25" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\mapaCharacters.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\test_assertions.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>E:\P3\default.gpr</vfs_project>
+      <vfs_file>E:\P3\src\test_assertions.ads</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >E:\P3\default.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >E:\P3\default.gpr</vfs_project>
+      <vfs_file >E:\P3\src\mapaCharacters.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >E:\P3\default.gpr</vfs_project>
+      <vfs_file >E:\P3\src\mapaCharacters.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >E:\P3\default.gpr</vfs_project>
+      <vfs_file >E:\P3\src\mapaCharacters.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 25">
+      <vfs_project >E:\P3\default.gpr</vfs_project>
+      <vfs_file >E:\P3\src\mapaCharacters.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >E:\P3\default.gpr</vfs_project>
+      <vfs_file >E:\P3\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
