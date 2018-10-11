@@ -14,11 +14,11 @@ RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U mapacharacters%b	mapacharacters.adb	237ee571 OO PK IL
+U mapacharacters%b	mapacharacters.adb	59db0d85 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
-U mapacharacters%s	mapacharacters.ads	0cbf8dc9 OO PK IL
+U mapacharacters%s	mapacharacters.ads	5194acc8 OO PK IL
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
@@ -26,8 +26,8 @@ D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D mapacharacters.ads	20181011104500 0cbf8dc9 mapacharacters%s
-D mapacharacters.adb	20181011104434 a7dcdbe2 mapacharacters%b
+D mapacharacters.ads	20181011105922 5194acc8 mapacharacters%s
+D mapacharacters.adb	20181011104726 80521217 mapacharacters%b
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
@@ -50,10 +50,10 @@ X 7 mapacharacters.ads
 11U14*put 11=19 11>38 8|22b14 42l8 42t11
 11r19 map{5R9} 8|22b19 27r13 27r26 31r27 33r22 35m13 35r27 36r22 37m13 40m10
 11a38 Key{string} 8|22b38 26r16 26r29 30r29
-17e4*No_Valor{character}
+17e4*No_Valor{character} 21r73
 19V13*containsKey{boolean} 19>26 19>38 22r20 8|44b13 47l8 47t19
 19r26 map{5R9} 21r20 21r39 21r53 23r44 24r33 26r43 27r32 8|44b26 46r22
-19e38 Key{character} 24r43 27r43 8|44b38 46r27
+19e38 Key{character} 21r67 24r43 27r43 8|44b38 46r27
 23i29 I{integer} 24r38
 26i28 I{integer} 27r37
 29V13*get{integer} 29>18 29>30 8|49b13 56l8 56t11
@@ -72,7 +72,7 @@ X 7 mapacharacters.ads
 53r21 map{5R9} 55r21 55r41 56r64 57r30 8|6b21 9r10 12r18 13r13 17r45
 53e33 value{character} 57r52 8|6b33 13r30
 X 8 mapacharacters.adb
-7i7 I{integer} 12r13 13r25 14r20 16m10 16r15 17r58
+7i7 I{positive} 12r13 13r25 14r20 16m10 16r15 17r58
 23i7 value{integer} 33m13 38m13 40r34
 23i14 index{integer} 31m10 32r13 33r36 36m13 37r26 40r24
 24e7 char{character} 30m10 31r32 37r36

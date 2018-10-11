@@ -109,7 +109,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__43.trace",
+      "tracefile": "mapacharacters__flow__73.trace",
       "how_proved": "flow"
     },
     {
@@ -129,7 +129,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__44.trace",
+      "tracefile": "mapacharacters__flow__74.trace",
       "how_proved": "flow"
     },
     {
@@ -149,7 +149,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__45.trace",
+      "tracefile": "mapacharacters__flow__75.trace",
       "how_proved": "flow"
     },
     {
@@ -169,7 +169,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__140.trace",
+      "tracefile": "mapacharacters__flow__168.trace",
       "how_proved": "flow"
     },
     {
@@ -189,7 +189,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__141.trace",
+      "tracefile": "mapacharacters__flow__169.trace",
       "how_proved": "flow"
     },
     {
@@ -209,7 +209,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__142.trace",
+      "tracefile": "mapacharacters__flow__170.trace",
       "how_proved": "flow"
     },
     {
@@ -229,7 +229,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__143.trace",
+      "tracefile": "mapacharacters__flow__171.trace",
       "how_proved": "flow"
     },
     {
@@ -249,7 +249,7 @@
       },
       "check_tree": {
       },
-      "tracefile": "mapacharacters__flow__144.trace",
+      "tracefile": "mapacharacters__flow__172.trace",
       "how_proved": "flow"
     },
     {
@@ -960,13 +960,13 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (none)",
-              "steps": 208,
+              "result": "Unknown (other)",
+              "steps": 175,
               "time": 0
             },
             "CVC4_CE": {
               "result": "Unknown (other)",
-              "steps": 208,
+              "steps": 175,
               "time": 0
             }
           },
@@ -1003,12 +1003,12 @@
           "19": [
             {
               "name": "Key",
-              "value": "'NUL'",
+              "value": "' '",
               "kind": "variable"
             },
             {
               "name": "map",
-              "value": "(keyList => (others => 'NUL'), valueList => (others => 199), Length => 199)",
+              "value": "(keyList => (0 => 'NUL', others => ' '), valueList => (others => 199), Length => 199)",
               "kind": "variable"
             }
           ],
@@ -1020,7 +1020,7 @@
             },
             {
               "name": "Key",
-              "value": "'NUL'",
+              "value": "' '",
               "kind": "variable"
             },
             {
@@ -1030,7 +1030,7 @@
             },
             {
               "name": "map",
-              "value": "(keyList => (others => 'NUL'), valueList => (others => 199), Length => 199)",
+              "value": "(keyList => (0 => 'NUL', others => ' '), valueList => (others => 199), Length => 199)",
               "kind": "variable"
             }
           ]
@@ -1389,7 +1389,7 @@
             "CVC4_CE": {
               "result": "Unknown (other)",
               "steps": 63,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1962,7 +1962,7 @@
       "line": 13,
       "col": 25,
       "rule": "VC_INDEX_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "mapaCharacters.search",
         "sloc": [
@@ -1987,13 +1987,8 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (none)",
-              "steps": 101,
-              "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 101,
+              "result": "Valid",
+              "steps": 5,
               "time": 0
             }
           },
@@ -2067,72 +2062,14 @@
       "check_file": "mapacharacters.adb",
       "check_line": 13,
       "check_col": 25,
-      "tracefile": "mapacharacters.adb_13_25_index_check.trace",
-      "cntexmp": {
-        "mapacharacters.adb": {
-          "7": [
-            {
-              "name": "I",
-              "value": "1",
-              "kind": "variable"
-            }
-          ],
-          "9": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "search'Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "12": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "search'Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "13": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            }
-          ]
-        },
-        "mapacharacters.ads": {
-          "53": [
-            {
-              "name": "map",
-              "value": "(keyList => (others => 'SOH'), valueList => (others => 1), Length => 1)",
-              "kind": "variable"
-            },
-            {
-              "name": "value",
-              "value": "'NUL'",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 6,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "mapacharacters.adb",
@@ -2253,7 +2190,7 @@
           ]
         }
       },
-      "msg_id": 7,
+      "msg_id": 6,
       "how_proved": "prover"
     },
     {
@@ -2500,7 +2437,7 @@
           ]
         }
       },
-      "msg_id": 8,
+      "msg_id": 7,
       "how_proved": "prover"
     },
     {
@@ -2625,46 +2562,6 @@
     },
     {
       "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "mapaCharacters.claves",
-            "sloc": [
-              {
-                "file": "mapacharacters.ads",
-                "line": 8
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "mapaCharacters.size",
-            "sloc": [
-              {
-                "file": "mapacharacters.ads",
-                "line": 9
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "mapaCharacters.search",
-          "sloc": [
-            {
-              "file": "mapacharacters.ads",
-              "line": 53
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
       ],
       "claim": {
         "predicate": "CLAIM_AORTE",
@@ -2758,6 +2655,234 @@
             {
               "file": "mapacharacters.ads",
               "line": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "mapaCharacters.claves",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "mapaCharacters.size",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 9
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "mapaCharacters.claves",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "mapaCharacters.size",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 9
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "mapaCharacters.search",
+          "sloc": [
+            {
+              "file": "mapacharacters.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "mapaCharacters.claves",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "mapaCharacters.size",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 9
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "mapaCharacters.search",
+          "sloc": [
+            {
+              "file": "mapacharacters.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "mapaCharacters.claves",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "mapaCharacters.size",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 9
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "mapaCharacters.claves",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 8
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "mapaCharacters.size",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 9
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "mapaCharacters.search",
+          "sloc": [
+            {
+              "file": "mapacharacters.ads",
+              "line": 53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "mapaCharacters.search",
+            "sloc": [
+              {
+                "file": "mapacharacters.ads",
+                "line": 53
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "mapaCharacters.put",
+          "sloc": [
+            {
+              "file": "mapacharacters.ads",
+              "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "mapaCharacters.claves",
+          "sloc": [
+            {
+              "file": "mapacharacters.ads",
+              "line": 8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "mapaCharacters.claves",
+          "sloc": [
+            {
+              "file": "mapacharacters.ads",
+              "line": 8
             }
           ]
         }
@@ -2958,77 +3083,17 @@
           ]
         }
       }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "mapaCharacters.search",
-            "sloc": [
-              {
-                "file": "mapacharacters.ads",
-                "line": 53
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "mapaCharacters.put",
-          "sloc": [
-            {
-              "file": "mapacharacters.ads",
-              "line": 11
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "mapaCharacters.claves",
-          "sloc": [
-            {
-              "file": "mapacharacters.ads",
-              "line": 8
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "mapaCharacters.claves",
-          "sloc": [
-            {
-              "file": "mapacharacters.ads",
-              "line": 8
-            }
-          ]
-        }
-      }
     }
   ],
   "timings": {
-    "marking": 1.26508099492639E-03,
-    "globals (basic)": 5.74583886191249E-03,
-    "globals/properties (advanced)": 1.23884947970510E-02,
-    "flow analysis": 1.19668003171682E-02,
-    "codepeer results": 3.32099989464041E-06,
-    "init_why_sections": 1.78999995114282E-04,
-    "translation of standard": 2.87156202830374E-03,
-    "translation of compilation unit": 3.70836779475212E-02,
-    "proof": 1.98269546031952E+00
+    "marking": 1.22040603309870E-03,
+    "globals (basic)": 5.43070118874311E-03,
+    "globals/properties (advanced)": 1.23314438387752E-02,
+    "flow analysis": 1.24977659434080E-02,
+    "codepeer results": 3.31999990521581E-06,
+    "init_why_sections": 1.66625002748333E-04,
+    "translation of standard": 3.01494309678674E-03,
+    "translation of compilation unit": 3.98610606789589E-02,
+    "proof": 2.18565344810486E+00
   }
 }

@@ -4,7 +4,7 @@ package body mapaCharacters with SPARK_Mode is
 
 
    function search (map : mapa; value : Character) return Integer is
-      I : Integer := 1;
+      I : Positive := 1;
    begin
       if map.Length <= 0 then
          return 0;

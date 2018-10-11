@@ -14,11 +14,11 @@ package mapaCharacters with SPARK_Mode is
        Post => True;
 
 
-   No_Valor : constant Character := ASCII.NUL;
+   No_Control : constant Character := ASCII.US;
 
    function containsKey (map : mapa; Key : Character) return Boolean
      with
-       Pre => size(map) > 0 and size (map) < claves(map)'Last ,
+       Pre => size(map) > 0 and size (map) < claves(map)'Last and Key > No_Control,
        Post => (if containsKey'Result then
                   (for some I in 1 .. size(map) =>
                          claves(map)(I) = Key)
