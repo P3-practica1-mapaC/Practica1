@@ -1,0 +1,29 @@
+Summary of SPARK analysis
+=========================
+
+---------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .            .           .          .
+Flow Dependencies                 .           .          .          .            .           .          .
+Initialization                   17          17          .          .            .           .          .
+Non-Aliasing                      .           .          .          .            .           .          .
+Run-time Checks                  21           .          .          .    15 (CVC4)           .          6
+Assertions                        3           .          .          .     3 (CVC4)           .          .
+Functional Contracts              7           .          .          .     4 (CVC4)           .          3
+LSP Verification                  .           .          .          .            .           .          .
+---------------------------------------------------------------------------------------------------------
+Total                            48    17 (35%)          .          .     22 (46%)           .    9 (19%)
+
+
+Analyzed 1 unit
+in unit mapacharacters, 9 subprograms and packages out of 9 analyzed
+  mapaCharacters at mapacharacters.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  mapaCharacters.claves at mapacharacters.ads:8 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  mapaCharacters.containsKey at mapacharacters.ads:19 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 3 checks out of 4 proved
+  mapaCharacters.get at mapacharacters.ads:29 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 0 checks out of 2 proved
+  mapaCharacters.getList at mapacharacters.ads:32 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  mapaCharacters.mapa at mapacharacters.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  mapaCharacters.put at mapacharacters.ads:11 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 2 checks out of 7 proved
+  mapaCharacters.search at mapacharacters.ads:53 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 5 checks out of 6 proved
+  mapaCharacters.size at mapacharacters.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)

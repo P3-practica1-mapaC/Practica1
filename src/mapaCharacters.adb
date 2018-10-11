@@ -1,24 +1,25 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-package body mapaCharacters is
+package body mapaCharacters with SPARK_Mode is
 
-   function search (map : mapa; value : Character) return Integer;
 
    function search (map : mapa; value : Character) return Integer is
+      I : Integer := 1;
    begin
-      if map.Length = 0 then
-         return -1;
+      if map.Length <= 0 then
+         return 0;
       end if;
-      for I in map.keyList'First .. map.Length loop
+      while I <= map.Length loop
          if map.keyList(I) = value then
             return I;
          end if;
+         I := I + 1;
+         pragma Loop_Variant (decreases => (map.Length - I));
       end loop;
-      return -1;
+      return 0;
    end search;
 
-
-   function put (map : in out mapa; Key : String) return Boolean is
+   procedure put (map : in out mapa; Key : String) is
       value, index : Integer;
       char : Character;
    begin
@@ -28,7 +29,7 @@ package body mapaCharacters is
          end if;
          char := Character (Key(I));
          index := search (map, char);
-         if index > -1 then
+         if index > 0 then
             value := map.valueList(index) + 1;
          else
             map.Length := map.Length + 1;
@@ -38,33 +39,31 @@ package body mapaCharacters is
          end if;
          map.valueList(index) := value;
       end loop;
-
-      return True;
    end put;
 
-   function constainsKey (map : in out mapa; Key : Character) return Boolean is
+   function containsKey (map : mapa; Key : Character) return Boolean is
    begin
-      return search (map, Key) > -1;
-   end constainsKey;
+      return search (map, Key) > 0;
+   end containsKey;
 
-   function get (map : in out mapa; Key : Character) return Integer is
+   function get (map :  mapa; Key : Character) return Integer is
       index : Integer := search(map, Key);
    begin
-      return map.valueList(index);
+      if (index > 0) then
+         return map.valueList(index);
+      end if;
+      return -1;
    end get;
 
-   function getList (map : in out mapa) return Keys is
-      result : Keys (1 .. map.Length);
+   function getList (map :  mapa) return Keys is
+      result : Keys (1 .. map.Length) := (others => ' ');
    begin
       for I in 1 .. map.Length loop
          result (I) := map.keyList(I);
+         pragma Loop_Invariant (for all K in 1 .. I  =>
+                               result (K) = map.keyList(K));
       end loop;
       return result;
    end getList;
-
-   function size (map : mapa) return Integer is
-   begin
-      return map.Length;
-   end size;
 
 end mapaCharacters;

@@ -1,0 +1,4 @@
+mapacharacters.ads:7:17: "Keys" is undefined
+mapacharacters.ads:7:22: incorrect constraint for this kind of type
+mapacharacters.ads:8:19: "Values" is undefined
+mapacharacters.ads:8:26: incorrect constraint for this kind of type
