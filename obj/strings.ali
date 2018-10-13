@@ -1,0 +1,105 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U strings%b		strings.adb		15636e33 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+
+U strings%s		strings.ads		53f961be EE NE OO PK
+Z interfaces%s		interfac.ads		interfac.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D strings.ads		20181013160614 53f961be strings%s
+D strings.adb		20181013152756 ce87bcd7 strings%b
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 11|1w10 1r27
+X 10 strings.ads
+1K9*Strings 62E9 73l6 73e13 11|3b14 69l5 69t12
+2E12*Character_Range{character} 4r52 24r40 37r37 47r46 11|6r40 30r37 43r46
+4A9*Keys(2E12)<integer> 13r40 64r16 70r40
+7A9*Value(natural)<integer> 14r41 65r17 71r41
+8I12*map_Range{natural} 12r38 33r31 66r16 69r38 11|15r44 54r42
+10R9*map 12r26 13r28 14r29 15r29 17r33 24r28 35r36 37r25 47r33 62c9 67e14
+. 69r26 70r28 71r29 72r29 11|6r28 24r36 30r25 43r33
+12V13*size{8I12} 12>19 18s26 19s30 29s34 41s36 52s23 53s24 53s37 54s37 55s38
+. 57s24 57s41 69b13
+12r19 mapa{10R9} 69r52
+13V13*claves{4A9} 13>21 20s31 20s50 30s19 32s14 42s22 44s17 52s40 54s24 58s71
+. 59s24 70b13
+13r21 mapa{10R9} 70r49
+14V13*valores{7A9} 14>22 55s24 60s24 71b13
+14r22 mapa{10R9} 71r51
+15V13*is_Init{boolean} 15>22 26s15 39s15 50s15 72b13
+15r22 mapa{10R9} 72r53
+17V13*areDiferent{boolean} 17>26
+17r26 mapa{10R9} 18r31 19r35 20r38 20r57
+18i16 I{integer} 20r20 20r44
+19i20 J{integer} 20r24 20r63
+24V13*search{integer} 24>21 24>33 28r14 32r27 33r14 51s18 58s44 59s37 60s38
+. 11|6b13 20l8 20t14
+24r21 mapa{10R9} 26r23 29r39 30r26 32r21 11|6b21 9r18 10r13 14r45 17r35
+24e33 char{2E12} 30r38 32r44 11|6b33 10r30 17r53
+29i23 I{integer} 30r32
+35U14*initMap 35=22 11|24b14 28l8 28t15
+35r22 mapa{10R9} 11|24b22 26m7 27m7
+37V13*get{integer} 37>18 37>30 40r18 44r30 11|30b13 40l8 40t11
+37r18 mapa{10R9} 39r23 41r41 42r29 44r24 11|30b18 32r21 33r13 37r32
+37e30 char{2E12} 42r41 44r44 11|30b30 33r31 37r50
+41i26 I{integer} 42r35
+47U14*put 47=19 47>39 47>63 11|43b14 66l8 66t11
+47r19 mapa{10R9} 50r23 51r25 52r28 52r47 53r29 53r42 54r31 54r42 55r32 55r43
+. 57r29 57r46 58r51 58r78 59r31 59r44 60r32 60r45 11|43b19 47r23 48r13 49m13
+. 56r35 60r24 60r38 61m10 61r25 62m10 62r22 63m10 63r23
+47e39 char{2E12} 51r31 54r51 58r57 58r90 59r50 59r59 60r51 11|43b39 48r34
+. 56r53 62r38
+47i63 value{natural} 55r52 60r60 11|43b63 49r36 63r39
+58i33 I{integer} 58r84
+63b7*init{boolean} 72r58 11|26m12
+64a7*claves{4A9} 70r54 11|10r18 17r40 33r18 37r37 48r18 56r40 60r43 62m15
+65a7*valores{7A9} 71r56 11|49m18 63m15
+66i7*length{8I12} 69r57 11|9r23 14r50 27m12 32r26 47r28 60r29 61m15 61r30
+. 62r27 63r28
+X 11 strings.adb
+7i7 I{positive} 9r13 10r25 11r20 13m10 13r15 14r59 15r34 16r52
+16i41 K{integer} 17r47
+32i11 I{integer} 33r25 34r20 36r51
+36i41 K{integer} 37r44
+44i7 index{positive} 47r13 48r25 49r26 53r44 54r33 55r51 57m10 57r19
+45b7 hecho{boolean} 50m13 60r14
+55i41 K{integer} 56r47
+

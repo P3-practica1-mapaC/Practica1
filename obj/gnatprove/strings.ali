@@ -1,0 +1,125 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U strings%b		strings.adb		e2cc61ae OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U strings%s		strings.ads		937980ea OO PK
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D strings.ads		20181013164300 937980ea strings%s
+D strings.adb		20181013164404 f9a8521e strings%b
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 8|1r6 1r23
+X 4 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 1r27
+X 7 strings.ads
+1K9*Strings 77l6 77e13 8|3b14 81l5 81t12
+2E12*Character_Range{character} 4r52 24r40 37r45 45r37 54r46 8|6r40 30r45
+. 43r37 56r46
+4A9*Keys(2E12)<integer> 13r40 68r16 74r40
+7A9*Value(natural)<integer> 14r41 69r17 75r41
+8I12*map_Range{natural} 12r38 33r31 70r16 73r38 8|15r44 67r42
+10R9*map 12r26 13r28 14r29 15r29 17r33 24r28 35r36 37r33 45r25 54r33 66c9
+. 71e14 73r26 74r28 75r29 76r29 8|6r28 24r36 30r33 43r25 56r33
+12V13*size{8I12} 12>19 18s26 19s30 29s34 41s38 43s38 49s36 52s38 58s18 58s36
+. 61s39 62s34 63s35 73b13
+12r19 mapa{10R9} 73r52
+13V13*claves{4A9} 13>21 20s31 20s50 30s19 32s14 41s52 43s52 50s22 52s52 61s57
+. 62s21 74b13
+13r21 mapa{10R9} 74r49
+14V13*valores{7A9} 14>22 52s79 63s21 75b13
+14r22 mapa{10R9} 75r51
+15V13*is_Init{boolean} 15>22 26s15 39s15 47s15 57s15 76b13
+15r22 mapa{10R9} 76r53
+17V13*areDiferent{boolean} 17>26
+17r26 mapa{10R9} 18r31 19r35 20r38 20r57
+18i16 I{integer} 20r20 20r44
+19i20 J{integer} 20r24 20r63
+24V13*search{integer} 24>21 24>33 28r14 32r27 33r14 8|6b13 20l8 20t14
+24r21 mapa{10R9} 26r23 29r39 30r26 32r21 8|6b21 9r18 10r13 14r45 17r35
+24e33 char{2E12} 30r38 32r44 8|6b33 10r30 17r53
+29i23 I{integer} 30r32
+35U14*initMap 35=22 8|24b14 28l8 28t15
+35r22 mapa{10R9} 8|24b22 26m7 27m7
+37V13*contantsKey{boolean} 37>26 37>38 40r18 8|30b13 40l8 40t19
+37r26 mapa{10R9} 39r23 41r43 41r59 43r43 43r59 8|30b26 32r21 33r13 37r32
+37e38 char{2E12} 41r70 43r71 8|30b38 33r30 37r50
+41i27 I{integer} 41r65
+43i27 I{integer} 43r65
+45V13*get{integer} 45>18 45>30 48r20 52r98 8|43b13 53l8 53t11
+45r18 mapa{10R9} 47r23 49r41 50r29 52r43 52r59 52r87 8|43b18 45r21 46r13
+. 47r20 50r32
+45e30 char{2E12} 50r41 52r70 8|43b30 46r31 50r50
+49i26 I{integer} 50r35
+52i27 I{integer} 52r65 52r93
+54U14*put 54=19 54>39 54>63 8|56b14 78l8 78t11
+54r19 mapa{10R9} 57r23 58r24 58r41 61r44 61r64 62r28 62r39 63r29 63r40 8|56b19
+. 60r23 61r13 62m13 69r35 73r24 73r38 74m10 74r25 75m10 75r22 76m10 76r23
+54e39 char{2E12} 61r76 62r48 8|56b39 61r34 69r53 75r38
+54i63 value{natural} 63r49 8|56b63 62r36 76r39
+61i28 I{integer} 61r70
+67b7*init{boolean} 76r58 8|26m12
+68a7*claves{4A9} 74r54 8|10r18 17r40 33r18 37r37 46r18 50r37 61r18 69r40
+. 73r43 75m15
+69a7*valores{7A9} 75r56 8|47r25 62m18 76m15
+70i7*length{8I12} 73r57 8|9r23 14r50 27m12 32r26 45r26 60r28 73r29 74m15
+. 74r30 75r27 76r28
+X 8 strings.adb
+7i7 I{positive} 9r13 10r25 11r20 13m10 13r15 14r59 15r34 16r52
+16i41 K{integer} 17r47
+32i11 I{integer} 33r25 36r51
+36i41 K{integer} 37r44
+45i11 I{integer} 46r25 47r33 49r51
+49i41 K{integer} 50r44
+57i7 index{positive} 60r13 61r25 62r26 66r44 67r33 68r51 70m10 70r19
+58b7 hecho{boolean} 63m13 73r14
+68i41 K{integer} 69r47
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS strings__size 0
+GG EK_GLOBALS strings__size local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__claves 0
+GG EK_GLOBALS strings__claves local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__valores 0
+GG EK_GLOBALS strings__valores local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__is_init 0
+GG EK_GLOBALS strings__is_init local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__arediferent 2 strings__size strings__claves
+GG EK_GLOBALS strings__arediferent local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__search 3 strings__size strings__claves strings__is_init
+GG EK_GLOBALS strings__search local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__initmap 0
+GG EK_GLOBALS strings__initmap local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__contantskey 3 strings__size strings__claves strings__is_init
+GG EK_GLOBALS strings__contantskey local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__get 4 strings__size strings__claves strings__valores strings__is_init
+GG EK_GLOBALS strings__get local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings__put 4 strings__size strings__claves strings__valores strings__is_init
+GG EK_GLOBALS strings__put local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS strings 0
+GG EK_GLOBALS strings local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER
