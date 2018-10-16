@@ -1,1 +1,1 @@
-strings.ads:44:04: extra ";" ignored
+main.adb:12:07: warning: variable "x" is read but never assigned

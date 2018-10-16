@@ -29,6 +29,7 @@ package body ada_main is
    E109 : Short_Integer; pragma Import (Ada, E109, "system__file_io_E");
    E006 : Short_Integer; pragma Import (Ada, E006, "ada__text_io_E");
    E115 : Short_Integer; pragma Import (Ada, E115, "strings_E");
+   E117 : Short_Integer; pragma Import (Ada, E117, "test_assertions_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -201,6 +202,8 @@ package body ada_main is
       Ada.Text_Io'Elab_Body;
       E006 := E006 + 1;
       E115 := E115 + 1;
+      Test_Assertions'Elab_Spec;
+      E117 := E117 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -236,10 +239,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\Red\Desktop\DE\obj\Strings.o
-   --   C:\Users\Red\Desktop\DE\obj\main.o
-   --   -LC:\Users\Red\Desktop\DE\obj\
-   --   -LC:\Users\Red\Desktop\DE\obj\
+   --   E:\P3\DE\obj\Strings.o
+   --   E:\P3\DE\obj\test_assertions.o
+   --   E:\P3\DE\obj\main.o
+   --   -LE:\P3\DE\obj\
+   --   -LE:\P3\DE\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat
