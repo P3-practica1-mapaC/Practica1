@@ -3,20 +3,21 @@ with Ada.Text_IO; use Ada.Text_IO;
 package body Strings  with SPARK_Mode is
 
 
-   function search (mapa : map; char : Character_Range) return Integer is
+   function search (mapa : map; char : Character_Range) return map_Range is
       I : Positive := 1;
    begin
       while I <= mapa.length loop
          if mapa.claves(I) = char then
             return I;
          end if;
-         I := I + 1;
+
          pragma Loop_Variant (Decreases => (mapa.length - I));
-         pragma Loop_Invariant ((I - 1) in map_Range);
-         pragma Loop_Invariant (for all K in 1 .. (I-1) =>
+         pragma Loop_Invariant (I in 1 .. size(mapa));
+         pragma Loop_Invariant (for all K in 1 .. I =>
                                   mapa.claves(K) /= char);
+         I := I + 1;
       end loop;
-      return -1;
+      return 0;
    end search;
 
 
@@ -27,55 +28,47 @@ package body Strings  with SPARK_Mode is
       mapa.length := 0;
    end initMap;
 
-   function contantsKey (mapa : map; char : Character_Range) return Boolean is
+   function containsKey (mapa : map; char : Character_Range) return Boolean is
+      index : map_Range := search(mapa, char);
    begin
-      for I in 1 .. mapa.length loop
-         if mapa.claves(I) = char then
-            return True;
-         end if;
-         pragma Loop_Invariant (for all K in 1 .. I =>
-                               mapa.claves(K) /= char);
-      end loop;
-      return False;
-   end contantsKey;
+      return index  in 1 .. mapa.length;
+   end containsKey;
 
 
    function get (mapa : map; char : Character_Range) return Integer is
+      index : map_Range := search(mapa, char);
    begin
-      for I in 1 .. mapa.length loop
-         if mapa.claves(I) =  char then
-            return mapa.valores(I);
-         end if;
-         pragma Loop_Invariant (for all K in 1 .. I =>
-                               mapa.claves(K) /= char);
-      end loop;
+      if index  in 1 .. mapa.length then
+         return mapa.valores(index);
+      end if;
+
       return -1;
    end get;
 
 
    procedure put (mapa : in out map ; char : Character_Range; value : Natural) is
-      index : Positive := 1;
-      hecho : Boolean := False;
+      index : map_Range := search (mapa, char);
    begin
-      while index <=  mapa.length loop
-         if mapa.claves(index) = char then
-            mapa.valores(index) := value;
-            hecho := True;
-            exit;
-         end if;
-         pragma Loop_Variant (Increases => index);
-         pragma Loop_Invariant (index in map_Range);
-         pragma Loop_Invariant (for all K in 1 .. index =>
-                                  mapa.claves(K) /= char);
-         index := index + 1;
-      end loop;
 
-      if not hecho and mapa.length < mapa.claves'Length then
+      if index in 1 .. mapa.length then
+         mapa.valores(index) := value;
+      elsif mapa.length < mapa.claves'Length then
          mapa.length := mapa.length + 1;
          mapa.claves(mapa.length) := char;
          mapa.valores(mapa.length) := value;
       end if;
    end put;
+
+   function getList (mapa : map) return Keys is
+      claves : Keys(1 .. mapa.length) := (others => ' ');
+   begin
+      for I in 1 ..  mapa.length loop
+         claves(I) :=  mapa.claves(I);
+         pragma Loop_Invariant (for all J in 1 .. I =>
+                                   claves(J) = mapa.claves(J));
+      end loop;
+      return claves;
+   end getList;
 
 
 end Strings;
