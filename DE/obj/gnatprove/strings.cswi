@@ -1,0 +1,12 @@
+20181018174600
+-c
+-x
+ada
+-gnatA
+-gnat12
+-gnata
+-g
+-fstack-check
+-gnato
+-gnatc
+-gnates=E:\P3\DE\obj\gnatprove\92ab313d.tmp

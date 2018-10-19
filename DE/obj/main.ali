@@ -1,0 +1,149 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -gnat12
+A -gnata
+A -g
+A -fstack-check=specific
+A -gnato
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U main%b		main.adb		75f14e2a NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W mapacharacters%s	mapacharacters.adb	mapacharacters.ali
+W system%s		system.ads		system.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W test_assertions%s	test_assertions.adb	test_assertions.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D main.adb		20181019215500 73fcf0c7 main%b
+D mapacharacters.ads	20181019214252 571af9e6 mapacharacters%s
+D system.ads		20180524051738 32a08138 system%s
+D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D test_assertions.ads	20180930173718 1487d8c5 test_assertions%s
+X 1 ada.ads
+16K9*Ada 20e8 10|2r6 2r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 10|2w10 2r27
+166U14*New_Line 10|233s4 235s4 238s4 240s4 243s4 245s4 258s4 260s4
+263U14*Put_Line 10|20s7 26s7 32s7 40s7 46s39 47s26 65s7 71s7 77s7 86s7 93s36
+. 94s23 106s35 107s26 116s35 117s26 129s35 130s26 142s35 143s26 155s35 156s26
+. 164s48 165s23 175s48 176s23 185s48 186s23 195s48 196s23 206s48 207s23 226s39
+. 227s26 234s4 239s4 244s4 259s4
+X 10 main.adb
+6U11*Main 6b11 264l5 264t9
+9U14 Test_MapaVacio 9b14 48l8 48t22 236s4
+10r7 mapVac{11|22R9} 13m15 13r15 17r25 22r31 28r36 34r28 38r27 42r31
+21i11 I{integer} 22r53
+27i11 I{integer} 28r58
+33i11 I{integer} 34r50
+41i11 I{integer} 42r39
+51U14 Test_VariosElementos 51b14 96l8 96t28 241s4
+52r7 mapVac{11|22R9} 56m15 56r15 58m14 58r14 62r25 67r33 73r38 79r30 83r21
+. 88r34
+53a7 xs{11|14A9} 83m7 84r20
+57i11 I{integer} 58r36
+66i11 I{integer} 67r55 67r61
+72i11 I{integer} 73r60
+78i11 I{integer} 79r52
+87i11 I{integer} 88r42 88r61
+99U14 Test_InsertCharOutOfRange 99b14 108l8 108t33 246s4
+100r7 mapa{11|22R9} 103m15 103r15 104m11 104r11
+101e7 char{character} 104r17
+110U14 Test_ValueOutOfRange 110b14 118l8 118t28 247s4
+111r7 mapa{11|22R9} 113m15 113r15 114m11 114r11
+121U14 Test_SearchCharOutOfRange 121b14 131l8 131t33 248s4
+122r7 mapa{11|22R9} 126m15 126r15 127r24
+123e7 char{character} 127r30
+124i7 index{integer} 127m7
+134U14 Test_ContainsCharOutOfRange 134b14 144l8 144t35 249s4
+135r7 mapa{11|22R9} 139m15 139r15 140r29
+136e7 char{character} 140r35
+137b7 state{boolean} 140m7
+147U15 Test_GetCharOutOfRange 147b15 157l8 157t30 250s4
+148r7 mapa{11|22R9} 152m15 152r15 153r21
+149e7 char{character} 153r27
+150i7 value{integer} 153m7
+159U14 Test_PutInitMap 159b14 166l8 166t23 252s4
+160r7 mapa{11|22R9} 162m11 162r11
+169U14 Test_GetinitMap 169b14 177l8 177t23 253s4
+170r7 mapa{11|22R9} 173r20
+171i7 value{integer} 173m7
+179U14 Test_SearchinitMap 179b14 187l8 187t26 255s4
+180r7 mapa{11|22R9} 183r23
+181i7 index{integer} 183m7
+189U14 Test_ContainsinitMap 189b14 197l8 197t28 254s4
+190r7 mapa{11|22R9} 193r28
+191b7 state{boolean} 193m7
+200U14 Test_GetListinitMap 200b14 208l8 208t27 256s4
+201r7 mapa{11|22R9} 204r25
+202a7 claves{11|14A9} 204m7
+211U14 Test_MapaLleno 211b14 228l8 228t22 261s4
+212r7 map1{11|22R9} 214m15 214r15 216m14 216r14 219r24 220m11 220r11 221r24
+. 222r32
+215i11 I{integer} 216r33
+X 11 mapacharacters.ads
+10K9*MapaCharacters 10|1w6 1r26 11|154e20
+12E12*Character_Range{character}
+14A9*Keys(12E12)<integer> 10|53r12 202r16
+19I12*map_Range{natural}
+22R9*map 10|10r16 52r16 100r14 111r14 122r14 135r14 148r14 160r14 170r14
+. 180r14 190r14 201r14 212r14 11|147e14
+24V13*size{19I12} 10|17s20 62s20 219s19 221s19
+49V13*search{19I12} 10|22s24 67s26 127s16 183s16
+63U14*initMap 10|13s7 56s7 103s7 113s7 126s7 139s7 152s7 214s7
+71V13*containsKey{boolean} 10|28s24 73s26 140s16 193s16 222s20
+85V13*get{integer} 10|34s24 79s26 153s16 173s16
+99U14*put 10|58s10 104s7 114s7 162s7 216s10 220s7
+121V13*getList{14A9} 10|38s19 83s13 204s17
+133V13*getChar{character} 10|42s23 88s26
+X 12 system.ads
+37K9*System 10|4r6 164r12 175r12 185r12 195r12 206r12 12|200e11
+X 13 s-assert.ads
+41K16*Assertions 10|4w13 164r19 175r19 185r19 195r19 206r19 13|50e22
+43X4*Assert_Failure 10|164r30 175r30 185r30 195r30 206r30
+X 26 test_assertions.ads
+3K9*Test_Assertions 10|3w6 3r27 26|18e20
+4X4*Test_Assertion_Error 10|46r15 93r12 226r15
+6U14*Assert_True 10|42s10 67s13 73s13 79s13 88s13
+9U14*Assert_False 10|22s10 28s10 34s10
+12U14*Assert_True 10|17s7 38s7 62s7 84s7 219s7 221s7
+15U14*Assert_False 10|222s7
+

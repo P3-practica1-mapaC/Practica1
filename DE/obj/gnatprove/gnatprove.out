@@ -1,0 +1,58 @@
+Summary of SPARK analysis
+=========================
+
+---------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .            .           .          .
+Flow Dependencies                 .           .          .          .            .           .          .
+Initialization                   30          30          .          .            .           .          .
+Non-Aliasing                      .           .          .          .            .           .          .
+Run-time Checks                  72           .          .          .    72 (CVC4)           .          .
+Assertions                       14           .          .          .    14 (CVC4)           .          .
+Functional Contracts             29           .          .          .    29 (CVC4)           .          .
+LSP Verification                  .           .          .          .            .           .          .
+---------------------------------------------------------------------------------------------------------
+Total                           145    30 (21%)          .          .    115 (79%)           .          .
+
+
+Analyzed 4 units
+in unit main, 0 subprograms and packages out of 1 analyzed
+  Main at main.adb:6 skipped
+in unit mapacharacters, 15 subprograms and packages out of 15 analyzed
+  MapaCharacters at mapacharacters.ads:10 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MapaCharacters.areDiferent at mapacharacters.ads:30 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  MapaCharacters.claves at mapacharacters.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MapaCharacters.containsKey at mapacharacters.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
+  MapaCharacters.get at mapacharacters.ads:85 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  MapaCharacters.getChar at mapacharacters.ads:133 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
+  MapaCharacters.getList at mapacharacters.ads:121 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (10 checks)
+  MapaCharacters.initMap at mapacharacters.ads:63 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  MapaCharacters.is_Init at mapacharacters.ads:27 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MapaCharacters.map at mapacharacters.ads:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MapaCharacters.put at mapacharacters.ads:99 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (14 checks)
+  MapaCharacters.search at mapacharacters.ads:49 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  MapaCharacters.size at mapacharacters.ads:24 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  MapaCharacters.stayTheSame at mapacharacters.ads:37 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)
+  MapaCharacters.valores at mapacharacters.ads:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+in unit strings, 15 subprograms and packages out of 15 analyzed
+  Strings at strings.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Strings.areDiferent at strings.ads:20 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (2 checks)
+  Strings.claves at strings.ads:16 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Strings.containsKey at strings.ads:50 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
+  Strings.get at strings.ads:60 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  Strings.getChar at strings.ads:98 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (4 checks)
+  Strings.getList at strings.ads:89 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (10 checks)
+  Strings.initMap at strings.ads:47 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Strings.is_Init at strings.ads:18 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Strings.map at strings.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Strings.put at strings.ads:71 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (14 checks)
+  Strings.search at strings.ads:34 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  Strings.size at strings.ads:15 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Strings.stayTheSame at strings.ads:25 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)
+  Strings.valores at strings.ads:17 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+in unit test_assertions, 0 subprograms and packages out of 4 analyzed
+  Test_Assertions.Assert_False at test_assertions.ads:9 skipped
+  Test_Assertions.Assert_False at test_assertions.ads:15 skipped
+  Test_Assertions.Assert_True at test_assertions.ads:6 skipped
+  Test_Assertions.Assert_True at test_assertions.ads:12 skipped

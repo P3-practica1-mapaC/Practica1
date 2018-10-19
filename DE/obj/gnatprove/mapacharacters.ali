@@ -1,0 +1,154 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnat12
+A -gnata
+A -g
+A -fstack-check
+A -gnato
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U mapacharacters%b	mapacharacters.adb	014fd700 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U mapacharacters%s	mapacharacters.ads	571af9e6 OO PK IL
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D mapacharacters.ads	20181019214252 571af9e6 mapacharacters%s
+D mapacharacters.adb	20181019200216 de489dbc mapacharacters%b
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 20e8 8|1r6 1r23
+X 4 a-textio.ads
+49K13*Text_IO 471e16 8|1w10 1r27
+X 7 mapacharacters.ads
+10K9*MapaCharacters 154l6 154e20 8|3b14 84l5 84t19
+12E12*Character_Range{character} 14r46 49r40 71r45 85r37 99r46 8|6r40 31r45
+. 38r37 49r46
+14A9*Keys(12E12)<integer> 25r40 121r41 143r16 150r40 8|62r41 63r16
+17A9*Value(natural)<integer> 26r41 144r17 151r41
+19I12*map_Range{natural} 24r38 38r25 49r64 145r16 149r38 8|6r64 32r15 39r15
+. 50r15
+22R9*map 24r26 25r28 26r29 27r29 30r33 37r33 37r48 49r28 63r36 71r33 85r25
+. 99r33 121r29 133r29 142c9 147e14 149r26 150r28 151r29 152r29 8|6r28 25r36
+. 31r33 38r25 49r33 62r29 73r29
+24V13*size{19I12} 24>19 31s26 32s30 39s31 55s36 59s34 65s33 77s40 79s39 92s36
+. 104s15 104s33 105s45 113s14 113s27 114s27 115s28 125s33 136s24 149b13 8|15s43
+. 75s29
+24r19 mapa{22R9} 149r52
+25V13*claves{14A9} 25>21 33s31 33s50 40s39 40s62 41s22 41s43 56s14 59s48
+. 77s54 79s53 92s50 106s19 114s14 126s39 136s56 150b13
+25r21 mapa{22R9} 150r49
+26V13*valores{17A9} 26>22 42s22 42s44 92s77 107s19 115s14 151b13
+26r22 mapa{22R9} 151r51
+27V13*is_Init{boolean} 27>22 53s15 65s14 75s15 89s15 102s15 124s15 134s13
+. 152b13
+27r22 mapa{22R9} 152r53
+30V13*areDiferent{boolean} 30>26 102s33 103s18
+30r26 mapa{22R9} 31r31 32r35 33r38 33r57
+31i16 I{integer} 33r20 33r44
+32i20 J{integer} 33r24 33r63
+37V13*stayTheSame{boolean} 37>26 37>38 37>53 37>72 108s19 110s19 112s14
+37r26 mapa{22R9} 40r46 40r69 41r50 42r52
+37r38 mapaOld{22R9} 39r36 41r29 42r30
+37b53 exclude{boolean} 40r21
+37i72 index{natural} 38r10 40r52
+39i20 I{integer} 40r75 41r38 41r56 42r39 42r58
+49V13*search{19I12} 49>21 49>33 52r20 55r14 56r27 58r14 105s18 106s32 107s33
+. 108s53 8|6b13 21l8 21t14 32s28 39s28 50s28
+49r21 mapa{22R9} 52r38 53r23 55r41 56r21 59r39 59r55 8|6b21 9r18 10r13 14r45
+. 15r48 17r35
+49e33 char{12E12} 52r44 56r44 59r67 8|6b33 10r30 17r53
+59i23 I{integer} 59r61
+63U14*initMap 63=22 8|25b14 29l8 29t15
+63r22 mapa{22R9} 65r23 65r38 8|25b22 27m7 28m7
+71V13*containsKey{boolean} 71>26 71>38 74r20 76r20 8|31b13 35l8 35t19
+71r26 mapa{22R9} 74r43 75r23 77r45 77r61 79r44 79r60 8|31b26 32r35 34r29
+71e38 char{12E12} 74r49 77r72 79r72 8|31b38 32r41
+77i29 I{integer} 77r67
+79i28 I{integer} 79r66
+85V13*get{integer} 85>18 85>30 88r20 91r15 92r96 94r15 8|38b13 46l8 46t11
+85r18 mapa{22R9} 88r35 89r23 92r41 92r57 92r85 8|38b18 39r35 41r25 42r17
+85e30 char{12E12} 88r41 92r68 8|38b30 39r41
+92i25 I{integer} 92r63 92r91
+99U14*put 99=19 99>39 99>63 8|49b14 60l8 60t11
+99r19 mapa{22R9} 102r23 102r45 103r30 104r21 104r38 105r25 105r50 106r26
+. 106r39 107r27 107r40 108r31 108r37 108r60 110r31 110r37 112r26 112r32 113r19
+. 113r32 114r21 114r32 115r22 115r33 8|49b19 50r36 53r24 54m10 55r13 55r27
+. 56m10 56r25 57m10 57r22 58m10 58r23
+99e39 char{12E12} 105r31 106r45 106r54 107r46 108r66 114r41 8|49b39 50r42
+. 57r38
+99i63 value{natural} 107r55 115r42 8|49b63 54r33 58r39
+121V13*getList{14A9} 121>22 123r18 126r19 8|62b13 71l8 71t15
+121r22 mapa{22R9} 123r36 124r23 125r38 126r46 8|62b22 63r26 65r22 66r24 68r48
+125i23 I{integer} 126r34 126r52
+133V13*getChar{character} 133>22 133>34 136r39 137r38 8|73b13 80l8 80t15
+133r22 mapa{22R9} 134r21 136r29 136r63 8|73b22 75r34 78r14
+133i34 index{integer} 136r10 136r69 8|73b34 75r15 78r26
+143a7*claves{14A9} 150r54 8|10r18 17r40 55r32 57m15 66r29 68r53 78r19
+144a7*valores{17A9} 151r56 8|42r22 54m15 58m15
+145i7*length{19I12} 149r57 8|9r23 14r50 28m12 34r34 41r30 53r29 55r18 56m15
+. 56r30 57r27 58r28 63r31 65r27
+146b7*init{boolean} 152r58 8|27m12
+X 8 mapacharacters.adb
+7i7 I{positive} 9r13 10r25 11r20 14r59 15r33 16r51 18m10 18r15
+16i41 K{integer} 17r47
+32i7 index{7|19I12} 34r14
+39i7 index{7|19I12} 41r10 42r30
+50i7 index{7|19I12} 53r10 54r23
+63a7 claves{7|14A9} 66m10 68r36 70r14
+65i11 I{integer} 66r17 66r36 67r51
+67i41 J{integer} 68r43 68r60
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS mapacharacters__size 0
+GG EK_GLOBALS mapacharacters__size local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__claves 0
+GG EK_GLOBALS mapacharacters__claves local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__valores 0
+GG EK_GLOBALS mapacharacters__valores local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__is_init 0
+GG EK_GLOBALS mapacharacters__is_init local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__arediferent 2 mapacharacters__size mapacharacters__claves
+GG EK_GLOBALS mapacharacters__arediferent local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__staythesame 3 mapacharacters__size mapacharacters__claves mapacharacters__valores
+GG EK_GLOBALS mapacharacters__staythesame local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__search 3 mapacharacters__size mapacharacters__claves mapacharacters__is_init
+GG EK_GLOBALS mapacharacters__search local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__initmap 2 mapacharacters__size mapacharacters__is_init
+GG EK_GLOBALS mapacharacters__initmap local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__containskey 4 mapacharacters__size mapacharacters__claves mapacharacters__is_init mapacharacters__search
+GG EK_GLOBALS mapacharacters__containskey local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__get 5 mapacharacters__size mapacharacters__claves mapacharacters__valores mapacharacters__is_init mapacharacters__search
+GG EK_GLOBALS mapacharacters__get local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__put 7 mapacharacters__size mapacharacters__claves mapacharacters__valores mapacharacters__is_init mapacharacters__arediferent mapacharacters__staythesame mapacharacters__search
+GG EK_GLOBALS mapacharacters__put local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__getlist 3 mapacharacters__size mapacharacters__claves mapacharacters__is_init
+GG EK_GLOBALS mapacharacters__getlist local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters__getchar 3 mapacharacters__size mapacharacters__claves mapacharacters__is_init
+GG EK_GLOBALS mapacharacters__getchar local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS mapacharacters 0
+GG EK_GLOBALS mapacharacters local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

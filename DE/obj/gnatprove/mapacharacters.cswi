@@ -1,0 +1,12 @@
+20181019215846
+-c
+-x
+ada
+-gnatA
+-gnat12
+-gnata
+-g
+-fstack-check
+-gnato
+-gnatc
+-gnates=C:\Users\Red\Desktop\Git_temp\DE\obj\gnatprove\c710ab72.tmp

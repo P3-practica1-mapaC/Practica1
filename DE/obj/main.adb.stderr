@@ -1,0 +1,14 @@
+main.adb:104:17: warning: value not in range of type "Character_Range" defined at mapacharacters.ads:12
+main.adb:104:17: warning: "Constraint_Error" will be raised at run time
+main.adb:114:22: warning: value not in range of type "Standard.Natural"
+main.adb:114:22: warning: "Constraint_Error" will be raised at run time
+main.adb:127:30: warning: value not in range of type "Character_Range" defined at mapacharacters.ads:12
+main.adb:127:30: warning: "Constraint_Error" will be raised at run time
+main.adb:140:35: warning: value not in range of type "Character_Range" defined at mapacharacters.ads:12
+main.adb:140:35: warning: "Constraint_Error" will be raised at run time
+main.adb:153:27: warning: value not in range of type "Character_Range" defined at mapacharacters.ads:12
+main.adb:153:27: warning: "Constraint_Error" will be raised at run time
+main.adb:170:07: warning: variable "mapa" is read but never assigned
+main.adb:180:07: warning: variable "mapa" is read but never assigned
+main.adb:190:07: warning: variable "mapa" is read but never assigned
+main.adb:201:07: warning: variable "mapa" is read but never assigned
